@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 40%;
+  position: sticky; /*allows for one side of the page to not move */
+  top: 0;
+  height: 100vh;
+}
+
+.content {
+  width: 60%;
+}
+
+.tech-stack,
+.tech-tools,
+.projects {
+  display: flex;
+  max-width: 600px;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.tech-stack li,
+.tech-tools li,
+.projects {
+  background-color: #fba151;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #f9c784;
+}
+
+.navigation {
+  text-decoration: none;
+}
+
+body {
+  background: #efeff0;
+  font-family: Nunito;
+  font-weight: 300;
+  font-size: large;
+}
+
+h1,
+h2,
+h3 {
+  color: #92afd7;
+}
+
+footer {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: block;
+  }
+
+  .sidebar {
+    position: static;
+    height: auto;
+  }
+}
